@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<head>
+	<meta charset ="utf-8">
+	<title>문제!</title>
+	<link href="stylesheet/reset.css" rel="stylesheet" type="text/css">
+	<link href="stylesheet/index3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="wrap">
+
+	<div id="h1">나에 대한 문제!</div>
+	<br>
+	<form action="update.php" method="post">
+		<input type="hidden" name="type" value="user"/>
+		사용자 이름을 입력해 주세요 : <br/><input type="text" name="name" size="10"/>
+		<input type="button" value="확인"/><br/><br/>
+		문제 1: 나의 이름은?<br>
+		<input type="radio" name="mname" value="m1"/>이재혁
+		<input type="radio" name="mname" value="m2"/>이재헉
+		<input type="radio" name="mname" value="m3"/>이재영
+		<br/><br/>
+		문제 2: 내가 좋아하는것을 모두 골라주세요!<br>
+		<input type="checkbox" name="fav" value="f1"/>치킨
+		<input type="checkbox" name="fav" value="f2"/>고기
+		<input type="checkbox" name="fav" value="f3"/>생선
+		<br/><br/>
+		저의 사진을 올려주세요! : <input type="file" name="photo"/><br><br>
+
+		사진에 태그할 내용 : <select name="tag">
+					<option value = "z1">최고!</option>
+					<option value = "z2">멋져요!</option>
+					<option value = "z3">아름다워!</option>
+				</select>
+				<br/><br/>
+
+		하고싶은 말? <br/>
+		<textarea cols="30" rows="5" name="what"></textarea><br/>
+		<input type="submit"/>
+	</form>
+	<br><br>
+
+<div id="navbar">
+			<ul>
+				<li><a href="index2.html" class="selected">좋아하는것 보기!</a></li>
+				<li><a href="index3.html">나에대한 퀴즈 풀기!</a></li>				
+			</ul>
+		</div>
+
+</div>
+</body>
+</html>
